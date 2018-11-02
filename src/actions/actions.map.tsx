@@ -1,12 +1,12 @@
-import { down, DownReturnFunction } from "./count/down.action";
-import { up, UpReturnFunction } from "./count/up.action";
+import { iu } from "../utils/iu-ts/index";
+import { State } from "../state/state";
 
 export interface Actions {
-    down: (value: number) => DownReturnFunction;
-    up: (value: number) => UpReturnFunction;
+    counterUp: (value: number) => (state: State) => any,
+    counterDown: (value: number) => (state: State) => any
 }
 
-export const actions = {
-    down: down,
-    up: up
+export const actions: Actions = {
+    counterUp: value => state => iu(state, 'counter/count', state.counter.count + value),
+    counterDown: value => state => iu(state, 'counter/count', state.counter.count - value)
 }

@@ -1,7 +1,11 @@
 export interface State {
+  counter: {
     count: number
+  }
 }
 
-export const state = {
-  count: 0
+export const state: State = {
+  counter: {
+    count: 0
+  }
 }
