@@ -10,7 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "hyperapp": "^1.2.9"
+    "hyperapp": "^1.2.9",
+    "iu-ts": "^1.0.0"
   },
   "devDependencies": {
     "typescript": "^3.1.4"

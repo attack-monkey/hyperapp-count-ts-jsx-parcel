@@ -1,4 +1,4 @@
-import { iu } from "../utils/iu-ts/index";
+import { iu } from "iu-ts";
 import { State } from "../state/state";
 
 export interface Actions {
